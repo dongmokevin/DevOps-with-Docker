@@ -1,0 +1,8 @@
+Commands
+# Starting the process
+docker run -it --rm  --name exercise_1.4 ubuntu sh -c 'while true; do echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website; done'
+
+# installing curl dependency
+docker exec -it exercise_1.4 bash
+apt update
+apt -y install curl
