@@ -1,0 +1,13 @@
+# Size of images
+REPOSITORY                          TAG       IMAGE ID       CREATED         SIZE
+devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   2 years ago     83MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   2 years ago     15.7MB
+
+# Get inside the container and check secret
+Commands
+docker run -d -it --rm --name exercise_1.5 devopsdockeruh/simple-web-service:alpine
+docker exec -it exercise_1.5 sh -c 'tail text.log'
+
+Secret
+'You can find the source code here: https://github.com/docker-hy'
+
